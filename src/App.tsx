@@ -130,7 +130,7 @@ export const History: React.FC<HistoryProps> = ({ history }) => {
 		<table>
 			<tbody>
 				{history &&
-					history.map((r, k) => (
+					history.reverse().map((r, k) => (
 						<tr key={k}>
 							<td>{r.from}</td>
 							<td>{"->"}</td>
